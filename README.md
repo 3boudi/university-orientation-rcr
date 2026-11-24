@@ -218,32 +218,35 @@ To let all 5 parts progress in parallel without merge conflicts, every backend e
 
 ### Assignment Board
 
-| Part | PDF Stage | Core Scope | Recommended Branch | Status | Assigned To |
-| :---: | :--- | :--- | :--- | :---: | :--- |
-| **Part 1** | *Étape 1* | Knowledge Modeling, ≥10 Profiles & Core App Foundation | `feat/part-1-modeling-foundation` | 🟢 Open | `TBD` |
-| **Part 2** | *Étape 2* | Classical Logic Engine, Proof Traces & Classical UI | `feat/part-2-classical-logic` | 🟢 Open | `TBD` |
-| **Part 3** | *Étape 3* | Default Reasoning Engine, Exceptions, Revisions & UI | `feat/part-3-default-reasoning` | 🟢 Open | `TBD` |
-| **Part 4** | *Étape 4* | Fuzzy Logic Engine, Membership Plots & Fuzzy UI | `feat/part-4-fuzzy-logic` | 🟢 Open | `TBD` |
-| **Part 5** | *Étape 5* | Comparative Analysis, Unified Dashboard & 6-Page Report | `feat/part-5-comparison-report` | 🟢 Open | `TBD` |
+> Track all open tasks live in the [**GitHub Issues Tab**](https://github.com/3boudi/university-orientation-rcr/issues) or by [**Milestones**](https://github.com/3boudi/university-orientation-rcr/milestones).
+
+| Part | PDF Stage | Core Scope | GitHub Issues | Recommended Branch | Status | Assigned To |
+| :---: | :--- | :--- | :--- | :--- | :---: | :--- |
+| **Part 1** | *Étape 1* | Knowledge Modeling, ≥10 Profiles & Core App Foundation | [#1](https://github.com/3boudi/university-orientation-rcr/issues/1), [#2](https://github.com/3boudi/university-orientation-rcr/issues/2), [#3](https://github.com/3boudi/university-orientation-rcr/issues/3), [#4](https://github.com/3boudi/university-orientation-rcr/issues/4) ([M1](https://github.com/3boudi/university-orientation-rcr/milestone/1)) | `feat/part-1-modeling-foundation` | 🟢 Open | `TBD` |
+| **Part 2** | *Étape 2* | Classical Logic Engine, Proof Traces & Classical UI | [#5](https://github.com/3boudi/university-orientation-rcr/issues/5), [#6](https://github.com/3boudi/university-orientation-rcr/issues/6) ([M2](https://github.com/3boudi/university-orientation-rcr/milestone/2)) | `feat/part-2-classical-logic` | 🟢 Open | `TBD` |
+| **Part 3** | *Étape 3* | Default Reasoning Engine, Exceptions, Revisions & UI | [#7](https://github.com/3boudi/university-orientation-rcr/issues/7), [#8](https://github.com/3boudi/university-orientation-rcr/issues/8) ([M3](https://github.com/3boudi/university-orientation-rcr/milestone/3)) | `feat/part-3-default-reasoning` | 🟢 Open | `TBD` |
+| **Part 4** | *Étape 4* | Fuzzy Logic Engine, Membership Plots & Fuzzy UI | [#9](https://github.com/3boudi/university-orientation-rcr/issues/9), [#10](https://github.com/3boudi/university-orientation-rcr/issues/10) ([M4](https://github.com/3boudi/university-orientation-rcr/milestone/4)) | `feat/part-4-fuzzy-logic` | 🟢 Open | `TBD` |
+| **Part 5** | *Étape 5* | Comparative Analysis, Unified Dashboard & 6-Page Report | [#11](https://github.com/3boudi/university-orientation-rcr/issues/11), [#12](https://github.com/3boudi/university-orientation-rcr/issues/12), [#13](https://github.com/3boudi/university-orientation-rcr/issues/13) ([M5](https://github.com/3boudi/university-orientation-rcr/milestone/5)) | `feat/part-5-comparison-report` | 🟢 Open | `TBD` |
 
 ---
 
 ### Part 1 — Knowledge Modeling, Profiles & Project Foundation
-- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-1-modeling-foundation` | **Covers:** *PDF Étape 1*
+- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-1-modeling-foundation` | **Covers:** *PDF Étape 1* | **Issues:** [#1](https://github.com/3boudi/university-orientation-rcr/issues/1), [#2](https://github.com/3boudi/university-orientation-rcr/issues/2), [#3](https://github.com/3boudi/university-orientation-rcr/issues/3), [#4](https://github.com/3boudi/university-orientation-rcr/issues/4)
 
 **Goal:** Establish the shared domain knowledge, ≥ 10 diverse student profiles, Pydantic data contracts, FastAPI skeleton, and React profile selector/builder so Parts 2–5 plug in cleanly.
 
 **Backend Tasks (Python / FastAPI)**
-- [ ] Finalize the 3 specialties (`AI`, `SE`, `CYBER`) and formalize all orientation criteria: academic results, skills, interests, and admission conditions (`backend/app/data/specialties.json`).
-- [ ] Design at least **10 distinct student profiles** (`backend/app/data/profiles.json`) intentionally covering: clear matches, multi-specialty matches, borderline grades (for fuzzy logic), incomplete/missing data (for default rules), and explicit exception triggers (e.g., failed core prerequisite or disciplinary/attendance constraint).
-- [ ] Document the shared base facts & rule specifications (`backend/app/data/rules_catalog.json`).
-- [ ] Scaffold FastAPI (`backend/app/main.py`, CORS config, `requirements.txt`), define shared Pydantic schemas (`backend/app/models/schemas.py`), and implement `GET /api/profiles` and `GET /api/knowledge-base`.
-- [ ] Write `backend/tests/test_profiles.py` validating schema integrity and profile coverage.
+- [ ] **([#1](https://github.com/3boudi/university-orientation-rcr/issues/1))** Choose and formalize the 3 university specialties (`AI` / *Intelligence Artificielle*, `SE` / *Génie Logiciel*, `CYBER` / *Cybersécurité*) in `backend/app/data/specialties.json`.
+- [ ] **([#1](https://github.com/3boudi/university-orientation-rcr/issues/1))** Identify and formalize all orientation criteria: academic results, skills, interests, and admission conditions (`backend/app/data/specialties.json`).
+- [ ] **([#2](https://github.com/3boudi/university-orientation-rcr/issues/2))** Design at least **10 distinct student profiles** (`backend/app/data/profiles.json`) intentionally covering: clear matches, multi-specialty matches, borderline grades (for fuzzy logic), incomplete/missing data (for default rules), and explicit exception triggers (e.g., failed core prerequisite or disciplinary/attendance constraint).
+- [ ] **([#1](https://github.com/3boudi/university-orientation-rcr/issues/1))** Define and document the shared base facts & rule specifications that serve all 3 approaches (`backend/app/data/rules_catalog.json`).
+- [ ] **([#3](https://github.com/3boudi/university-orientation-rcr/issues/3))** Scaffold FastAPI (`backend/app/main.py`, CORS config, `requirements.txt`), define shared Pydantic schemas (`backend/app/models/schemas.py`), and implement `GET /api/profiles` and `GET /api/knowledge-base`.
+- [ ] **([#2](https://github.com/3boudi/university-orientation-rcr/issues/2))** Write `backend/tests/test_profiles.py` validating schema integrity and profile coverage.
 
 **Frontend Tasks (React + Vite)**
-- [ ] Scaffold React + Vite + TypeScript + Tailwind CSS under `frontend/` and create the typed API client (`frontend/src/api/client.ts`).
-- [ ] Build the **Profile Selector & Custom Profile Builder** (`frontend/src/components/profiles/`) allowing users to pick any of the 10+ presets or modify grades/interests/flags live.
-- [ ] Create the top-level layout with tabbed or multi-panel placeholders ready for Parts 2, 3, 4, and 5.
+- [ ] **([#4](https://github.com/3boudi/university-orientation-rcr/issues/4))** Scaffold React + Vite + TypeScript + Tailwind CSS under `frontend/` and create the typed API client (`frontend/src/api/client.ts`).
+- [ ] **([#4](https://github.com/3boudi/university-orientation-rcr/issues/4))** Build the **Profile Selector & Custom Profile Builder** (`frontend/src/components/profiles/`) allowing users to pick any of the 10+ presets or modify grades/interests/flags live.
+- [ ] **([#4](https://github.com/3boudi/university-orientation-rcr/issues/4))** Create the top-level layout with tabbed or multi-panel placeholders ready for Parts 2, 3, 4, and 5.
 
 **Report & Validation Deliverables**
 - [ ] Draft **Section 1 (Knowledge Modeling)** of the report: specialty table, criteria definitions, and summary table of the 10+ student profiles.
@@ -256,7 +259,7 @@ To let all 5 parts progress in parallel without merge conflicts, every backend e
 ---
 
 ### Part 2 — Classical Logic Engine & UI
-- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-2-classical-logic` | **Covers:** *PDF Étape 2*
+- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-2-classical-logic` | **Covers:** *PDF Étape 2* | **Issues:** [#5](https://github.com/3boudi/university-orientation-rcr/issues/5), [#6](https://github.com/3boudi/university-orientation-rcr/issues/6)
 
 **Goal:** Represent orientation knowledge in propositional and/or first-order predicate logic, implement a deterministic deduction engine separating *accessible* vs. *recommended* specialties, and visualize full proof justifications.
 
@@ -286,7 +289,7 @@ To let all 5 parts progress in parallel without merge conflicts, every backend e
 ---
 
 ### Part 3 — Default Reasoning Engine, Exceptions & UI
-- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-3-default-reasoning` | **Covers:** *PDF Étape 3*
+- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-3-default-reasoning` | **Covers:** *PDF Étape 3* | **Issues:** [#7](https://github.com/3boudi/university-orientation-rcr/issues/7), [#8](https://github.com/3boudi/university-orientation-rcr/issues/8)
 
 **Goal:** Implement non-monotonic default reasoning (Reiter-style defaults `α : β / γ`) with at least 4 default rules and at least 1 real exception mechanism that visibly revises provisional conclusions, then compare outputs with Classical Logic.
 
@@ -322,7 +325,7 @@ To let all 5 parts progress in parallel without merge conflicts, every backend e
 ---
 
 ### Part 4 — Fuzzy Logic Engine & UI
-- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-4-fuzzy-logic` | **Covers:** *PDF Étape 4*
+- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-4-fuzzy-logic` | **Covers:** *PDF Étape 4* | **Issues:** [#9](https://github.com/3boudi/university-orientation-rcr/issues/9), [#10](https://github.com/3boudi/university-orientation-rcr/issues/10)
 
 **Goal:** Model graded academic skills and imprecise interests using fuzzy sets, membership functions, ≥ 6 Mamdani fuzzy rules, and defuzzification to compute a continuous suitability score (*degré d'adéquation*) for each specialty.
 
@@ -355,7 +358,7 @@ To let all 5 parts progress in parallel without merge conflicts, every backend e
 ---
 
 ### Part 5 — Comparative Analysis, Dashboard & Final Report
-- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-5-comparison-report` | **Covers:** *PDF Étape 5 & Final Deliverables*
+- **Assigned To:** `TBD` | **Status:** `🟢 Open` | **Branch:** `feat/part-5-comparison-report` | **Covers:** *PDF Étape 5 & Final Deliverables* | **Issues:** [#11](https://github.com/3boudi/university-orientation-rcr/issues/11), [#12](https://github.com/3boudi/university-orientation-rcr/issues/12), [#13](https://github.com/3boudi/university-orientation-rcr/issues/13)
 
 **Goal:** Integrate all three engines into a unified comparative runner, build the React Comparative Analysis Dashboard, produce reproducible result exports, and lead the comparative analysis & final 6-page report.
 
