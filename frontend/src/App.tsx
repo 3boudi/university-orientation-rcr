@@ -25,7 +25,7 @@ function readInitialStudent(): string {
 
 export function App() {
   const [view, setView] = useState<WorkspaceView>(readInitialView);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   const [students, setStudents] = useState<Record<string, StudentFacts>>(() =>
     structuredClone(INITIAL_FACTS),
   );

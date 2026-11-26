@@ -111,6 +111,7 @@ export function StudentDetail({
                 key={item.code}
                 className="access-item"
                 data-accessible={item.accessible}
+                data-specialty={item.code}
               >
                 <div className="access-item__top">
                   <span className="access-item__left">

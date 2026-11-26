@@ -48,7 +48,7 @@ export function KnowledgeBaseView() {
           {SPECIALTY_CODES.map((code) => {
             const thresholds = Object.entries(ACCESS_CONDITIONS[code]);
             return (
-              <div key={code} className="kb-spec-card">
+              <div key={code} className="kb-spec-card" data-specialty={code}>
                 <div className="kb-spec-card__head">
                   <span className="kb-spec-card__code">{code}</span>
                   <Badge tone="neutral">Min. thresholds</Badge>
