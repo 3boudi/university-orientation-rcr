@@ -1,8 +1,3 @@
-# ==========================================
-# UNIVERSITY ORIENTATION SYSTEM
-# Base Rules (Stage 1: Knowledge Modeling)
-# ==========================================
-
 RULES = {
     "R1": "Algorithms >= 10 AND Mathematics >= 10 => Accessible AI",
     "R2": "Algorithms >= 10 AND Programming >= 10 => Accessible SE",

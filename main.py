@@ -1,8 +1,3 @@
-# ==========================================
-# UNIVERSITY ORIENTATION SYSTEM
-# Stage 1: Knowledge Modeling
-# ==========================================
-
 import json
 from pathlib import Path
 
@@ -12,13 +7,11 @@ DATA_DIR = Path(__file__).parent / "data"
 
 
 def load_json(filename: str) -> dict:
-    """Load a JSON file from the data/ directory."""
     with open(DATA_DIR / filename, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
 def build_facts(students: dict) -> dict:
-    """Transform raw student profiles into a structured fact base."""
     facts = {}
     for name, profile in students.items():
         facts[name] = {
@@ -37,16 +30,13 @@ def build_facts(students: dict) -> dict:
 
 
 def main() -> None:
-    # 1. Load JSON data
     specialties = load_json("specialties.json")
     criteria = load_json("criteria.json")
     access_conditions = load_json("access_conditions.json")
     students = load_json("profiles.json")
 
-    # 2. Build fact base
     facts = build_facts(students)
 
-    # 3. Display modeled knowledge
     print("====================================")
     print(" UNIVERSITY ORIENTATION SYSTEM")
     print("====================================")
