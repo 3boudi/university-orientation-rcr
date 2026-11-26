@@ -1,0 +1,14 @@
+{
+  "AI": {
+    "Algorithms": 10,
+    "Mathematics": 10
+  },
+  "SE": {
+    "Algorithms": 10,
+    "Programming": 10
+  },
+  "CS": {
+    "Algorithms": 10,
+    "NetworkSkill": 8
+  }
+}

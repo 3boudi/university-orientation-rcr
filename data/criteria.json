@@ -1,0 +1,18 @@
+{
+  "academic_results": [
+    "Algorithms",
+    "Programming",
+    "Mathematics"
+  ],
+  "skills": [
+    "AlgorithmicSkill",
+    "ProgrammingSkill",
+    "NetworkSkill",
+    "AnalyticalSkill"
+  ],
+  "interests": [
+    "InterestAI",
+    "InterestSE",
+    "InterestCS"
+  ]
+}

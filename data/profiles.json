@@ -1,0 +1,52 @@
+{
+  "Ahmed": {
+    "grades": [17, 16, 18],
+    "skills": [18, 17, 10, 17],
+    "interests": [19, 12, 8]
+  },
+  "Sara": {
+    "grades": [13, 19, 12],
+    "skills": [13, 19, 11, 15],
+    "interests": [9, 20, 11]
+  },
+  "Yacine": {
+    "grades": [16, 14, 13],
+    "skills": [16, 14, 19, 18],
+    "interests": [8, 11, 20]
+  },
+  "Lina": {
+    "grades": [18, 17, 19],
+    "skills": [18, 16, 8, 19],
+    "interests": [20, 12, 7]
+  },
+  "Mohamed": {
+    "grades": [11, 12, 10],
+    "skills": [11, 12, 14, 12],
+    "interests": [11, 13, 14]
+  },
+  "Amine": {
+    "grades": [15, 18, 14],
+    "skills": [15, 19, 16, 16],
+    "interests": [12, 19, 16]
+  },
+  "Nour": {
+    "grades": [9, 16, 15],
+    "skills": [12, 17, 12, 15],
+    "interests": [16, 18, 10]
+  },
+  "Karim": {
+    "grades": [14, 11, 12],
+    "skills": [14, 11, 18, 16],
+    "interests": [7, 10, 19]
+  },
+  "Rania": {
+    "grades": [19, 15, 17],
+    "skills": [19, 15, 13, 19],
+    "interests": [18, 15, 12]
+  },
+  "Bilal": {
+    "grades": [10, 9, 8],
+    "skills": [10, 9, 7, 10],
+    "interests": [9, 8, 7]
+  }
+}
